@@ -1,0 +1,21 @@
+<h1>Router Concepts</h1>
+<nav>
+    <a routerLink="/avengerlist">List</a>
+    <a routerLink= "/avengerdetails">Details</a>
+</nav>
+<router-outlet></router-outlet>
+<hr>
+
+<h1> Avengers</h1>
+<AvengersList-root></AvengersList-root>
+<h1> Details</h1>
+<AvenegerDetails-root></AvenegerDetails-root>
+<hr>
+<h1>Parent Component</h1>
+<input type="text" placeholder="enter parent value" #txtParent (keyup)="0"><br/>
+<b>The value from child is : {{childData}}</b>
+<hr>
+<child-root (childEvent) = "childData = $event" [parentData]="txtParent.value"></child-root>
+<hr>
+<userdata-root></userdata-root>
+<!--<superhero-root></superhero-root>-->

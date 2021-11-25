@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+    border: brown;
+    padding: 10px;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
